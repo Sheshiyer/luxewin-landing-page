@@ -3,8 +3,8 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { Button } from "@nextui-org/react";
-import { SunIcon } from "./icons/SunIcon";
-import { MoonIcon } from "./icons/MoonIcon";
+import { SunIcon } from "../components/icons/SunIcon";
+import { MoonIcon } from "../components/icons/MoonIcon";
 
 export function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
@@ -20,9 +20,9 @@ export function ThemeToggle() {
     <Button
       isIconOnly
       variant="light"
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onPress={() => setTheme(theme === "dark" ? "light" : "dark")}
       aria-label="Toggle theme"
-      className="fixed top-4 right-4 z-50"
+      className="bg-transparent hover:bg-zinc-100 dark:hover:bg-zinc-800"
     >
       {theme === "dark" ? <SunIcon /> : <MoonIcon />}
     </Button>

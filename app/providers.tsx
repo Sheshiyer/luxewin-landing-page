@@ -5,7 +5,13 @@ import { ThemeProvider as NextThemesProvider } from "next-themes";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <NextThemesProvider attribute="class" defaultTheme="dark" enableSystem={false} storageKey="luxewin-theme">
+    <NextThemesProvider 
+      attribute="class" 
+      defaultTheme="dark" 
+      enableSystem={false} 
+      storageKey="luxewin-theme"
+      forcedTheme="dark"
+    >
       <NextUIProvider>
         {children}
       </NextUIProvider>

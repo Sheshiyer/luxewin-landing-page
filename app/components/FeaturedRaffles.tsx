@@ -67,17 +67,17 @@ const tierStyles: Record<Tier, {
   gold: {
     border: "ring-2 ring-yellow-500/50",
     shadow: "shadow-yellow-500/20",
-    glow: "bg-gradient-to-r from-yellow-300/20 via-yellow-400/20 to-yellow-500/20",
+    glow: "bg-gradient-to-br from-yellow-300/20 via-yellow-400/20 to-yellow-500/20",
   },
   silver: {
     border: "ring-2 ring-slate-500/50",
     shadow: "shadow-slate-500/20",
-    glow: "bg-gradient-to-r from-slate-300/20 via-slate-400/20 to-slate-500/20",
+    glow: "bg-gradient-to-br from-slate-300/20 via-slate-400/20 to-slate-500/20",
   },
   bronze: {
     border: "ring-2 ring-orange-500/50",
     shadow: "shadow-orange-500/20",
-    glow: "bg-gradient-to-r from-orange-300/20 via-orange-400/20 to-orange-500/20",
+    glow: "bg-gradient-to-br from-orange-300/20 via-orange-400/20 to-orange-500/20",
   },
 };
 
@@ -132,7 +132,7 @@ function RaffleCard({ raffle, index }: { raffle: Raffle; index: number }) {
             </div>
           </div>
           <div className="p-4 flex-1 flex flex-col">
-            <h3 className="text-2xl font-bold mb-2 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <h3 className="text-2xl font-bold mb-2 bg-gradient-to-br from-primary via-purple-500 to-secondary bg-clip-text text-transparent">
               {raffle.title}
             </h3>
             <p className="text-zinc-600 dark:text-zinc-300 mb-4 text-sm flex-1">
@@ -178,7 +178,7 @@ function RaffleCard({ raffle, index }: { raffle: Raffle; index: number }) {
               </div>
               <Button
                 color="primary"
-                className={`w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90 transform group-hover:scale-105 transition-all ${tierStyles[raffle.tier].shadow}`}
+                className={`w-full bg-gradient-to-br from-primary via-purple-500 to-secondary hover:opacity-90 transform group-hover:scale-105 transition-all ${tierStyles[raffle.tier].shadow}`}
                 size="lg"
                 aria-label={`Enter ${raffle.title} raffle`}
               >
@@ -203,10 +203,10 @@ export function FeaturedRaffles() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent font-heading">
+          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-br from-primary via-purple-500 to-secondary bg-clip-text text-transparent font-heading">
             Featured Luxury Raffles
           </h2>
-          <p className="text-xl text-zinc-600 dark:text-zinc-300">
+          <p className="text-xl text-zinc-600 dark:text-zinc-300 max-w-2xl mx-auto">
             Enter now for a chance to win these exclusive prizes
           </p>
         </motion.div>

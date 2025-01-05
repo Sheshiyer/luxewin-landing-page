@@ -15,18 +15,26 @@ export default function Home() {
       <AboutSection />
 
       {/* Final CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-[#0066CC] to-[#00CC99] text-white">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="py-20 relative overflow-hidden">
+        {/* Animated background gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary via-purple-500 to-secondary bg-300% animate-gradient-slow" />
+        
+        {/* Overlay pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.2)_0%,transparent_100%)]" />
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-4 relative">
           <div className="text-center">
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white font-heading">
               Ready to Win Your Dream Prize?
             </h2>
-            <p className="text-xl mb-8 opacity-90">
+            <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto">
               Join thousands of winners worldwide on luxewin
             </p>
             <Button
               size="lg"
-              className="font-bold text-lg bg-accent hover:bg-accent/90 transform hover:scale-105 transition-all"
+              className="font-bold text-lg bg-white text-primary hover:bg-white/90 transform hover:scale-105 transition-all shadow-xl hover:shadow-2xl backdrop-blur-sm"
               aria-label="Enter raffle now"
             >
               Enter Now!
@@ -88,6 +96,7 @@ export default function Home() {
                   key={i}
                   className="w-8 h-8 min-w-0 rounded-full bg-zinc-200 dark:bg-zinc-800 hover:bg-primary/20 dark:hover:bg-primary/40 transition-colors p-0"
                   aria-label={`Follow us on ${social.name}`}
+                  isIconOnly
                 />
               ))}
             </div>
