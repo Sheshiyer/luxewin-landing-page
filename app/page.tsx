@@ -1,101 +1,99 @@
-import Image from "next/image";
+"use client";
+
+import { Button } from "@nextui-org/react";
+import { HeroSection } from "./components/HeroSection";
+import { FeaturedRaffles } from "./components/FeaturedRaffles";
+import { PastWinners } from "./components/PastWinners";
+import { AboutSection } from "./components/AboutSection";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <main className="min-h-screen">
+      <HeroSection />
+      <FeaturedRaffles />
+      <PastWinners />
+      <AboutSection />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Final CTA Section */}
+      <section className="py-16 bg-gradient-to-r from-[#0066CC] to-[#00CC99] text-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center">
+            <h2 className="text-4xl font-bold mb-6">
+              Ready to Win Your Dream Prize?
+            </h2>
+            <p className="text-xl mb-8 opacity-90">
+              Join thousands of winners worldwide on LUXWIN
+            </p>
+            <Button
+              size="lg"
+              className="font-bold text-lg bg-accent hover:bg-accent/90 transform hover:scale-105 transition-all"
+              aria-label="Enter raffle now"
+            >
+              Enter Now!
+            </Button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-12 bg-[#F8F8F8] dark:bg-zinc-950 border-t border-zinc-200 dark:border-zinc-800">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div>
+              <h3 className="font-bold text-lg mb-4">About LUXWIN</h3>
+              <p className="text-zinc-600 dark:text-zinc-300 mb-4">
+                Making luxury dreams accessible through fair and transparent raffles.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-bold text-lg mb-4">Quick Links</h3>
+              <ul className="space-y-2">
+                <li><Button variant="light" className="p-0 hover:text-primary transition-colors" aria-label="Learn how it works">How It Works</Button></li>
+                <li><Button variant="light" className="p-0 hover:text-primary transition-colors" aria-label="View available raffles">Available Raffles</Button></li>
+                <li><Button variant="light" className="p-0 hover:text-primary transition-colors" aria-label="See past winners">Past Winners</Button></li>
+                <li><Button variant="light" className="p-0 hover:text-primary transition-colors" aria-label="Read FAQ">FAQ</Button></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-bold text-lg mb-4">Legal</h3>
+              <ul className="space-y-2">
+                <li><Button variant="light" className="p-0 hover:text-primary transition-colors" aria-label="Read terms of service">Terms of Service</Button></li>
+                <li><Button variant="light" className="p-0 hover:text-primary transition-colors" aria-label="View privacy policy">Privacy Policy</Button></li>
+                <li><Button variant="light" className="p-0 hover:text-primary transition-colors" aria-label="Read refund policy">Refund Policy</Button></li>
+                <li><Button variant="light" className="p-0 hover:text-primary transition-colors" aria-label="View license information">License Info</Button></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-bold text-lg mb-4">Contact</h3>
+              <ul className="space-y-2 text-zinc-600 dark:text-zinc-300">
+                <li>support@luxwin.com</li>
+                <li>+1 (555) 123-4567</li>
+                <li>Mon-Fri: 9AM-6PM EST</li>
+              </ul>
+            </div>
+          </div>
+          <div className="pt-8 border-t border-zinc-200 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-zinc-600 dark:text-zinc-300">
+              © {new Date().getFullYear()} LUXWIN. All rights reserved.
+            </p>
+            <div className="flex gap-4">
+              {/* Social Media Icons - Replace with actual icons */}
+              {[
+                { name: 'Facebook', icon: 'facebook' },
+                { name: 'Twitter', icon: 'twitter' },
+                { name: 'Instagram', icon: 'instagram' },
+                { name: 'LinkedIn', icon: 'linkedin' }
+              ].map((social, i) => (
+                <Button
+                  key={i}
+                  className="w-8 h-8 min-w-0 rounded-full bg-zinc-200 dark:bg-zinc-800 hover:bg-primary/20 dark:hover:bg-primary/40 transition-colors p-0"
+                  aria-label={`Follow us on ${social.name}`}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
       </footer>
-    </div>
+    </main>
   );
 }
