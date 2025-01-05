@@ -22,7 +22,7 @@ export default function Home() {
               Ready to Win Your Dream Prize?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Join thousands of winners worldwide on LUXWIN
+              Join thousands of winners worldwide on luxewin
             </p>
             <Button
               size="lg"
@@ -40,7 +40,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h3 className="font-bold text-lg mb-4">About LUXWIN</h3>
+              <h3 className="font-bold text-lg mb-4">About luxewin</h3>
               <p className="text-zinc-600 dark:text-zinc-300 mb-4">
                 Making luxury dreams accessible through fair and transparent raffles.
               </p>
@@ -66,7 +66,7 @@ export default function Home() {
             <div>
               <h3 className="font-bold text-lg mb-4">Contact</h3>
               <ul className="space-y-2 text-zinc-600 dark:text-zinc-300">
-                <li>support@luxwin.com</li>
+                <li>support@luxewin.com</li>
                 <li>+1 (555) 123-4567</li>
                 <li>Mon-Fri: 9AM-6PM EST</li>
               </ul>
@@ -74,7 +74,7 @@ export default function Home() {
           </div>
           <div className="pt-8 border-t border-zinc-200 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-zinc-600 dark:text-zinc-300">
-              © {new Date().getFullYear()} LUXWIN. All rights reserved.
+              © {new Date().getFullYear()} luxewin. All rights reserved.
             </p>
             <div className="flex gap-4">
               {/* Social Media Icons - Replace with actual icons */}

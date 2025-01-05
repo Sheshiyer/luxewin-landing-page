@@ -39,13 +39,13 @@ export function AboutSection() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent font-heading">
-              About LUXWIN
+              About luxewin
             </h2>
             <p className="text-xl text-zinc-600 dark:text-zinc-300 mb-6">
-              LUXWIN was founded with a simple mission: to make luxury dreams accessible to everyone through fair and transparent raffles.
+              luxewin was founded with a simple mission: to make luxury dreams accessible to everyone through fair and transparent raffles.
             </p>
             <p className="text-lg text-zinc-600 dark:text-zinc-300 mb-6">
-              Since our inception, we've delivered over $50 million worth of luxury prizes to winners worldwide, maintaining a perfect track record of authenticity and customer satisfaction.
+              Since our inception, we&apos;ve delivered over $50 million worth of luxury prizes to winners worldwide, maintaining a perfect track record of authenticity and customer satisfaction.
             </p>
             <div className="grid grid-cols-2 gap-4 mb-6">
               <div className="bg-white dark:bg-zinc-900 p-4 rounded-lg text-center hover:shadow-md transition-all">

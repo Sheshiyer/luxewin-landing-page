@@ -2,6 +2,7 @@
 import React from "react";
 import { Card } from "@nextui-org/react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const winners = [
   {
@@ -17,7 +18,7 @@ const winners = [
     prize: "Porsche 911 GT3",
     date: "December 2023",
     location: "Singapore",
-    testimonial: "LUXWIN made my dream of owning a supercar come true. Incredible experience!",
+    testimonial: "luxewin made my dream of owning a supercar come true. Incredible experience!",
     image: "https://placehold.co/100x100",
   },
   {
@@ -60,10 +61,12 @@ export function PastWinners() {
             >
               <Card className="p-6 hover:shadow-lg transition-all dark:bg-zinc-900">
                 <div className="flex items-start gap-4">
-                  <img
+                  <Image
                     src={winner.image}
                     alt={winner.name}
-                    className="w-16 h-16 rounded-full object-cover"
+                    width={64}
+                    height={64}
+                    className="rounded-full object-cover"
                   />
                   <div>
                     <h3 className="text-xl font-bold mb-1">{winner.name}</h3>
@@ -76,7 +79,7 @@ export function PastWinners() {
                       <span>{winner.date}</span>
                     </div>
                     <p className="text-zinc-600 dark:text-zinc-300 italic">
-                      "{winner.testimonial}"
+                      &ldquo;{winner.testimonial}&rdquo;
                     </p>
                   </div>
                 </div>

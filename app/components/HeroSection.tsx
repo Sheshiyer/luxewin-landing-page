@@ -44,7 +44,7 @@ export function HeroSection() {
           className="text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary font-heading"
         >
           Win Luxury Dreams
-          <br /> with LUXWIN
+          <br /> with LUXEWIN
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
