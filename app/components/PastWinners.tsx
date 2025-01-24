@@ -18,7 +18,7 @@ const winners = [
     prize: "Porsche 911 GT3",
     date: "December 2023",
     location: "Singapore",
-    testimonial: "luxewin made my dream of owning a supercar come true. Incredible experience!",
+    testimonial: "ElitePrize made my dream of owning a supercar come true. Incredible experience!",
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=faces",
   },
   {

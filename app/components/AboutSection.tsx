@@ -41,10 +41,10 @@ export function AboutSection() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl font-bold mb-6 bg-gradient-to-br from-primary via-purple-500 to-secondary bg-clip-text text-transparent font-heading">
-              About luxewin
+              About ElitePrize
             </h2>
             <p className="text-xl text-zinc-600 dark:text-zinc-300 mb-6">
-              luxewin was founded with a simple mission: to make luxury dreams accessible to everyone through fair and transparent raffles.
+              ElitePrize was founded with a simple mission: to make luxury dreams accessible to everyone through fair and transparent raffles.
             </p>
             <p className="text-lg text-zinc-600 dark:text-zinc-300 mb-6">
               Since our inception, we&apos;ve delivered over $50 million worth of luxury prizes to winners worldwide, maintaining a perfect track record of authenticity and customer satisfaction.

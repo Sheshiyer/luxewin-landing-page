@@ -9,7 +9,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
       attribute="class" 
       defaultTheme="dark" 
       enableSystem={false} 
-      storageKey="luxewin-theme"
+      storageKey="eliteprize-theme"
       forcedTheme="dark"
     >
       <NextUIProvider>

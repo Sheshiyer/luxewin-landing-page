@@ -18,7 +18,7 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "LUXEWIN - Premium Luxury Raffles & Giveaways",
+  title: "ELITEPRIZE - Premium Luxury Raffles & Giveaways",
   description: "Enter exclusive raffles to win luxury watches, cars, homes, and more. Fair, transparent, and fully licensed platform.",
   keywords: "luxury raffles, win luxury items, luxury giveaways, luxury watches, luxury cars",
 };
